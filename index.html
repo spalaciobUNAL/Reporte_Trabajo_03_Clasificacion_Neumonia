@@ -3,7 +3,7 @@
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
+<html lang="es">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
@@ -11,9 +11,9 @@
 <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-<title>Agile Agency Free Bootstrap Web Template</title>
-<meta name="description" content="">
-<meta name="author" content="WebThemez">
+<title>Clasificacion Automatica de Neumonia en Radiografias de Torax</title>
+<meta name="description" content="Clasificacion binaria de radiografias usando descriptores tradicionales y Deep Learning">
+<meta name="author" content="Universidad Nacional de Colombia">
 <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -42,13 +42,13 @@
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
           <li class="active" id="firstLink"><a href="#home" class="scroll-link">Integrantes</a></li>
-          <li><a href="#services" class="scroll-link">Introducción</a></li>
-          <li><a href="#aboutUs" class="scroll-link">Marco teórico</a></li>
-           <li><a href="#Metodologia" class="scroll-link">Metodologia</a></li>
+          <li><a href="#services" class="scroll-link">Introduccion</a></li>
+          <li><a href="#aboutUs" class="scroll-link">Marco Teorico</a></li>
+          <li><a href="#Metodologia" class="scroll-link">Metodologia</a></li>
           <li><a href="#work" class="scroll-link">Resultados</a></li>
-          <li><a href="#plans" class="scroll-link">Tabla de mediciones reales</a></li>
-          <li><a href="#team" class="scroll-link">Team</a></li>
-          <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+          <li><a href="#plans" class="scroll-link">Comparacion de Modelos</a></li>
+          <li><a href="#team" class="scroll-link">Equipo</a></li>
+          <li><a href="#conclusions" class="scroll-link">Conclusiones</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse--> 
@@ -68,21 +68,21 @@
                 <img src="images/slides/1.jpg" alt="" />
                 <div class="flex-caption container">
           <h4>Integrantes:</h4>      
-					<p>Sebastián Palacio Betancur</p> 
+					<p>Laura Sanin Colorado</p> 
           <p>Juan Manuel Sanchez Restrepo</p> 
-          <p>Laura Sanín Colorado</p> 
-          <p>Henrry Uribe Cabrera Ordoñez</p> 
+          <p>Sebastian Palacio Betancur</p> 
+          <p>Henrry Uribe Cabrera Ordonez</p> 
 				
                 </div>
               </li>
               <li>
                 <img src="images/slides/2.jpg" alt="" />
                 <div class="flex-caption container">
-                    <h4>Informacion adicional</h4> 
-					<p>Curso: Visión por Computador (3009228)</p> 
-          <p>Semestre: 2025-02</p>
-          <p>Facultad de Minas — Universidad Nacional de Colombia</p>
-          <p>Departamento de Ciencias de la Computación y de la Decisión</p>
+                    <h4>Informacion del Curso</h4> 
+					<p>Curso: Vision por Computador (3009228)</p> 
+          <p>Semestre: 2025-01</p>
+          <p>Facultad de Minas - Universidad Nacional de Colombia</p>
+          <p>Departamento de Ciencias de la Computacion y de la Decision</p>
 			
                 </div>
               </li>
@@ -91,7 +91,7 @@
 	<!-- end slider -->
   </div>
   <div class="container hero-text2">
-  <h3>Universidad Nacional de Colombia - sede Medellin</h3>
+  <h3>Clasificacion Automatica de Neumonia en Radiografias de Torax</h3>
   </div>
 </section>
 <section id="services" class="page-section colord">
@@ -99,12 +99,28 @@
     <div class="row"> 
       <!-- item -->
       <div class="text-align: justify"><div class="b1"> 
-        <h3>INTRODUCCIÓN</h3>
-        <p>El registro de imágenes es una tarea fundamental en visión por computador, cuyo propósito es alinear diferentes vistas de una misma escena para obtener una representación coherente y continua. Este proceso es esencial en aplicaciones como la fotogrametría, la reconstrucción 3D, el mapeo y la medición de objetos en el mundo real.
+        <h3>INTRODUCCION</h3>
+        <p>La identificacion temprana y precisa de patologias pulmonares mediante radiografias de torax es un componente fundamental del diagnostico clinico. La interpretacion manual depende fuertemente de la experiencia del especialista y puede verse limitada en instituciones con alta demanda, escasez de radiologos o variabilidad interobservador.</p>
 
-        En este trabajo se implementa un pipeline de registro y fusión de imágenes empleando descriptores locales (SIFT, ORB y AKAZE), estimación de homografías mediante RANSAC, y técnicas de blending para lograr un panorama unificado. Posteriormente, a partir de la escena fusionada, se realiza una calibración métrica usando objetos de referencia para estimar distancias reales dentro del entorno.
+        <p>Los sistemas de apoyo al diagnostico basados en vision por computador ofrecen una alternativa para aumentar la precision y estandarizar interpretaciones.</p>
 
-        El proyecto combina validación con imágenes sintéticas —para evaluar la robustez geométrica del método— y aplicación práctica en un conjunto de fotografías de un comedor, donde se cuantifican errores, se analizan resultados y se discuten las limitaciones del método.</p>
+        <p>Este proyecto aborda la <strong>clasificacion binaria de radiografias</strong> (normales vs neumonia), usando:</p>
+        <ol style="margin-left: 40px;">
+          <li><strong>Descriptores tradicionales</strong> (HOG, LBP, Haralick, Zernike) + modelos clasicos de ML.</li>
+          <li><strong>Modelos profundos preentrenados</strong> (ResNet con Transfer Learning).</li>
+        </ol>
+
+        <h4><b>Objetivos</b></h4>
+        <p><strong>General:</strong> Desarrollar un sistema automatizado capaz de clasificar radiografias de torax como normales o con neumonia, evaluando la eficacia de enfoques tradicionales y de deep learning.</p>
+        
+        <p><strong>Especificos:</strong></p>
+        <ul style="margin-left: 40px;">
+          <li>Analizar la calidad y caracteristicas del dataset.</li>
+          <li>Extraer y evaluar descriptores tradicionales de imagenes.</li>
+          <li>Entrenar y comparar clasificadores clasicos y modelos de deep learning.</li>
+          <li>Determinar metricas de desempeno y robustez frente a variabilidad de imagenes.</li>
+          <li>Proponer mejoras y posibles aplicaciones clinicas.</li>
+        </ul>
       </div></div>
  
       <!-- end:--> 
@@ -118,29 +134,41 @@
     <div class="text-align: justify"> <div class="b1"> 
       
       <!-- Heading -->
-        <h3>MARCO TEÓRICO<br><br></h3>
-        <h4><b>Registro de Imágenes</b></h4>
-        <p>El registro consiste en encontrar una transformación geométrica que alinee dos imágenes capturadas desde diferentes puntos de vista. En este caso, se asume que las vistas pertenecen a un mismo plano, por lo que la transformación se modela mediante una homografía 3×3.</p>
-  
-  
-   
+        <h3>MARCO TEORICO<br><br></h3>
+        
+        <h4><b>Preprocesamiento de Imagenes Medicas</b></h4>
+        <ul style="margin-left: 40px;">
+          <li><strong>Redimensionamiento:</strong> uniformidad de dimensiones.</li>
+          <li><strong>Escala de grises:</strong> reduce dimensionalidad manteniendo informacion clinica.</li>
+          <li><strong>Normalizacion:</strong> homogeneiza intensidades entre imagenes.</li>
+          <li><strong>CLAHE:</strong> mejora contraste local evitando amplificacion de ruido.</li>
+        </ul>
+        <p>Estas tecnicas permiten consistencia y comparabilidad entre descriptores tradicionales y redes neuronales.</p>
 
-      <h4><b>Detección y Descripción de Características</b></h4>
-      <p>Los detectores y descriptores locales permiten identificar puntos de interés invariantes ante cambios de escala, rotación e iluminación:</p>
+      <h4><b>Descriptores Tradicionales</b></h4>
       <ul style="margin-left: 40px;">
-      <li>SIFT (Lowe, 2004): robusto a rotaciones y escalas.</li>
-      <li>ORB (Rublee et al., 2011): eficiente y rápido, basado en BRIEF binario.</li>
-      <li>AKAZE (Alcantarilla et al., 2013): balance entre robustez y velocidad mediante detección en el espacio no lineal.</li>
+        <li><strong>HOG (Histogram of Oriented Gradients):</strong> captura gradientes locales, ideal para bordes y estructuras anatomicas.</li>
+        <li><strong>LBP (Local Binary Patterns):</strong> describe microtexturas robustas a cambios de iluminacion.</li>
+        <li><strong>Haralick / GLCM:</strong> atributos de homogeneidad, contraste y correlacion.</li>
+        <li><strong>Momentos de Zernike:</strong> invariantes a rotacion, capturan informacion global de forma.</li>
       </ul>
 
-      <h4><b>Emparejamiento y Filtrado</b></h4>
-      <p>Los descriptores se comparan usando métricas de distancia (L2 o Hamming) y se filtran con el ratio test (Lowe, 2004). Para reducir falsos emparejamientos se aplica validación cruzada y posteriormente RANSAC (Fischler & Bolles, 1981) para estimar la homografía rechazando outliers.</p>
+      <h4><b>Metodos de Clasificacion</b></h4>
+      <ul style="margin-left: 40px;">
+        <li><strong>SVM (Support Vector Machine)</strong></li>
+        <li><strong>Random Forest</strong></li>
+        <li><strong>XGBoost</strong></li>
+        <li><strong>k-NN (k-Nearest Neighbors)</strong></li>
+        <li><strong>Regresion Logistica</strong></li>
+      </ul>
+      <p>Todos requieren vectores de caracteristicas construidos previamente.</p>
 
-      <h4><b>Fusión y Blending</b></h4>
-      <p>Una vez estimada la transformación, las imágenes se combinan mediante interpolación y blending (por ejemplo, feather blending o pirámides Laplacianas) para generar un mosaico continuo.</p>
-
-      <h4><b>Calibración Métrica</b></h4>
-      <p>Al identificar objetos de dimensiones conocidas dentro de la imagen fusionada, se establece una relación píxeles ↔ centímetros, permitiendo estimar medidas reales a partir del modelo 2D registrado.</p>
+      <h4><b>Deep Learning - Transfer Learning</b></h4>
+      <ul style="margin-left: 40px;">
+        <li><strong>ResNet preentrenada en ImageNet.</strong></li>
+        <li>Capas convolucionales como extractor de caracteristicas + capas finales ajustadas a clasificacion binaria.</li>
+        <li><em>Skip connections</em> permiten aprender representaciones complejas sin degradacion.</li>
+      </ul>
    
       </div></div>
     </div>
@@ -160,46 +188,45 @@
       
       <!-- Heading -->
         <h3>METODOLOGIA<br></h3>
-        <p>El desarrollo siguió un flujo modular documentado en tres notebooks principales:</p>
+        
+        <h4><b>Dataset</b></h4>
+        <p>El proyecto utilizo un dataset publico de radiografias de torax del repositorio Kaggle:</p>
+        <ul style="margin-left: 40px;">
+          <li><strong>Fuente:</strong> <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia" target="_blank">Kaggle - Chest X-Ray Images (Pneumonia)</a></li>
+          <li><strong>Numero total de imagenes:</strong> 5,856</li>
+          <li><strong>Normales:</strong> 1,583</li>
+          <li><strong>Neumonia:</strong> 4,273</li>
+          <li><strong>Formato:</strong> JPEG, resolucion variable (principalmente 1024x1024 px)</li>
+          <li><strong>Division:</strong> Train 70% / Test 30%</li>
+        </ul>
+
+        <h4><b>Pipeline de Procesamiento</b></h4>
+        <p>El desarrollo siguio un flujo modular documentado en tres notebooks principales:</p>
         <ol style="margin-left: 40px;">
-          <li>01_exploratory_analysis.ipynb – Análisis exploratorio y comparación de detectores.</li>
-          <li>02_synthetic_validation.ipynb – Validación geométrica con imágenes sintéticas.</li>
-          <li>03_main_pipeline.ipynb – Registro, fusión, calibración y medición en la escena real.</li>
-      
+          <li><strong>01_exploratory_analysis_clean.ipynb</strong> - Analisis exploratorio, visualizacion de tamanos, contraste, nitidez y preprocesamiento.</li>
+          <li><strong>02_feature_extraction.ipynb</strong> - Extraccion de 26,244 dimensiones de caracteristicas: HOG, LBP, GLCM, Momentos de Hu, filtros Gabor.</li>
+          <li><strong>03_classification.ipynb</strong> - Entrenamiento de clasificadores tradicionales y ResNet Transfer Learning, evaluacion con metricas.</li>
         </ol>
 
-      <h4><b>Pipeline de procesamiento</b></h4>
-      <p>Los detectores y descriptores locales permiten identificar puntos de interés invariantes ante cambios de escala, rotación e iluminación:</p>
-        <ol style="margin-left: 40px;">
-          <li>Extracción de características con SIFT, ORB y AKAZE.</li>
-          <li>Emparejamiento de descriptores mediante BFMatcher o FLANN con ratio test.</li>
-          <li>Estimación de homografía con RANSAC.</li>
-          <li>Fusión y blending de las imágenes alineadas.</li>
-          <li>Calibración métrica a partir de referencias físicas (cuadro y mesa).</li>
-          <li>Medición y análisis de incertidumbre.</li>
-       
-        </ol>
-
-      <h4><b>Decisiones técnicas</b></h4>
+      <h4><b>Extraccion de Caracteristicas</b></h4>
+      <p>Se extrajeron <strong>26,244 dimensiones de caracteristicas</strong> incluyendo:</p>
       <ul style="margin-left: 40px;">
-        <li>SIFT se usó como detector principal por su robustez.</li>
-        <li>Umbral de ratio test = 0.75.</li>
-        <li>RANSAC: 2000 iteraciones, umbral 5 px.</li>
-        <li>Blending: método feather para suavizar transiciones.</li>
-        <li>Escala calibrada: 9.32 píxeles/cm.</li>
-        <li>Referencias: cuadro (117 cm) y mesa (161.1 cm).</li>
-
+        <li><strong>HOG:</strong> Detecta costillas, columna, contornos pulmonares. Valores normalizados: -7.58 a 10.</li>
+        <li><strong>Momentos de Hu y Geometria:</strong> Area: 22,372 px, Perimetro: 4,243, Excentricidad: 0.57, Solidez: 0.60</li>
+        <li><strong>LBP:</strong> Textura local robusta a iluminacion. Diferencia tejido sano vs patologico.</li>
+        <li><strong>GLCM:</strong> 60 dimensiones. Contraste: 9.52, Disimilitud: 1.89, Homogeneidad: 0.49</li>
+        <li><strong>Filtros Gabor:</strong> Detectan patrones segun frecuencia/orientacion.</li>
+        <li><strong>Estadisticas basicas:</strong> Media: 0.52, SD: 0.24, Varianza: 0.058, Entropia: -43.78</li>
       </ul>
 
-      <h4><b>Diagrama de flujo</b></h4>
-        <ol type="A" style="margin-left: 40px;">
-          <li>[Imágenes de entrada] → B [Detección de características]</li>
-          <li>→ C [Emparejamiento robusto (RANSAC)]</li>
-          <li>→ D [Fusión de imágenes]</li>
-          <li>→ E [Panorama final]</li>
-          <li>→ F [Calibración métrica]</li>
-          <li>→ G [Mediciones y análisis]</li>
-      </ol>
+      <h4><b>Decisiones Tecnicas</b></h4>
+      <ul style="margin-left: 40px;">
+        <li>Preprocesamiento: gris, redimensionamiento, normalizacion, CLAHE.</li>
+        <li>Division train/test con estratificacion.</li>
+        <li>Estandarizacion de caracteristicas antes de clasificacion.</li>
+        <li>Evaluacion: matriz de confusion, precision, recall, F1, AUC-ROC.</li>
+        <li>Comparacion sistematica entre modelos tradicionales y ResNet.</li>
+      </ul>
       </div></div>
     </div>
 
@@ -234,7 +261,7 @@
   <div class="container text-center">
     <div class="heading">
       <h2>Resultados</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+      <p>Visualizaciones del proceso de extraccion de caracteristicas, entrenamiento y evaluacion de modelos de clasificacion.</p>
     </div>
 
     <div class="row">
@@ -243,105 +270,104 @@
 
           <!-- Filtros -->
           <ul class="filters list-inline mb-4">
-            <li><a class="active" data-filter="*" href="#">Todas las imágenes</a></li>
-            <li><a data-filter=".photography" href="#">Imágenes de entrada</a></li>
-            <li><a data-filter=".branding" href="#">Comparación de detectores</a></li>
-            <li><a data-filter=".web" href="#">Distribución de keypoints</a></li>
-            <li><a data-filter=".web_emparejamiento_valido" href="#">Emparejamientos válidos</a></li>
-            <li><a data-filter=".web_validación" href="#">Validación con imágenes sintéticas</a></li>
-            <li><a data-filter=".web_perspectiva" href="#">Fusión de perspectivas</a></li>
-            <li><a data-filter=".web_Calibracion_medicion" href="#">Calibración y medición</a></li>
+            <li><a class="active" data-filter="*" href="#">Todas las imagenes</a></li>
+            <li><a data-filter=".dataset" href="#">Dataset</a></li>
+            <li><a data-filter=".preprocesamiento" href="#">Preprocesamiento</a></li>
+            <li><a data-filter=".descriptores" href="#">Descriptores</a></li>
+            <li><a data-filter=".tradicional" href="#">Modelos Tradicionales</a></li>
+            <li><a data-filter=".deeplearning" href="#">Deep Learning</a></li>
+            <li><a data-filter=".comparacion" href="#">Comparacion</a></li>
           </ul>
 
-          <!-- Galería de imágenes -->
+          <!-- Galeria de imagenes -->
           <ul class="items list-unstyled d-flex flex-wrap justify-content-center gap-4">
 
-            <li class="item photography">
-              <a href="images/work/1.jpg" class="fancybox">
+            <li class="item dataset">
+              <a href="images/work/1.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/1.jpg" alt="">
-                  <div class="overlay"><span>Imágenes de entrada</span></div>
+                  <img src="images/work/1.png" alt="">
+                  <div class="overlay"><span>Muestras del Dataset</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item branding">
-              <a href="images/work/2.jpg" class="fancybox">
+            <li class="item preprocesamiento">
+              <a href="images/work/2.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/2.jpg" alt="">
-                  <div class="overlay"><span>Comparación de detectores</span></div>
+                  <img src="images/work/2.png" alt="">
+                  <div class="overlay"><span>Pipeline de Preprocesamiento</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web">
-              <a href="images/work/3.jpg" class="fancybox">
+            <li class="item descriptores">
+              <a href="images/work/3.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/3.jpg" alt="">
-                  <div class="overlay"><span>Distribución de keypoints</span></div>
+                  <img src="images/work/3.png" alt="">
+                  <div class="overlay"><span>Visualizacion HOG</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_emparejamiento_valido">
-              <a href="images/work/4.jpg" class="fancybox">
+            <li class="item descriptores">
+              <a href="images/work/4.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/4.jpg" alt="">
-                  <div class="overlay"><span>Emparejamientos válidos</span></div>
+                  <img src="images/work/4.png" alt="">
+                  <div class="overlay"><span>Caracteristicas LBP</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_emparejamiento_valido">
-              <a href="images/work/5.jpg" class="fancybox">
+            <li class="item descriptores">
+              <a href="images/work/5.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/5.jpg" alt="">
-                  <div class="overlay"><span>Emparejamientos válidos</span></div>
+                  <img src="images/work/5.png" alt="">
+                  <div class="overlay"><span>Filtros Gabor</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_validación">
-              <a href="images/work/6.jpg" class="fancybox">
+            <li class="item tradicional">
+              <a href="images/work/6.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/6.jpg" alt="">
-                  <div class="overlay"><span>Validación con imágenes sintéticas</span></div>
+                  <img src="images/work/6.png" alt="">
+                  <div class="overlay"><span>Matrices de Confusion - Tradicionales</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_validación">
-              <a href="images/work/7.jpg" class="fancybox">
+            <li class="item tradicional">
+              <a href="images/work/7.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/7.jpg" alt="">
-                  <div class="overlay"><span>Validación con imágenes sintéticas</span></div>
+                  <img src="images/work/7.png" alt="">
+                  <div class="overlay"><span>Curvas ROC - Tradicionales</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_validación">
-              <a href="images/work/8.jpg" class="fancybox">
+            <li class="item deeplearning">
+              <a href="images/work/8.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/8.jpg" alt="">
-                  <div class="overlay"><span>Validación con imágenes sintéticas</span></div>
+                  <img src="images/work/8.png" alt="">
+                  <div class="overlay"><span>Matrices de Confusion - Deep Learning</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_perspectiva">
-              <a href="images/work/9.jpg" class="fancybox">
+            <li class="item deeplearning">
+              <a href="images/work/9.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/9.jpg" alt="">
-                  <div class="overlay"><span>Fusión de perspectivas</span></div>
+                  <img src="images/work/9.png" alt="">
+                  <div class="overlay"><span>Curvas ROC - Deep Learning</span></div>
                 </div>
               </a>
             </li>
 
-            <li class="item web_Calibracion_medicion">
-              <a href="images/work/10.jpg" class="fancybox">
+            <li class="item comparacion">
+              <a href="images/work/10.png" class="fancybox">
                 <div class="card">
-                  <img src="images/work/10.jpg" alt="">
-                  <div class="overlay"><span>Calibración y medición</span></div>
+                  <img src="images/work/10.png" alt="">
+                  <div class="overlay"><span>Comparacion Final de Modelos</span></div>
                 </div>
               </a>
             </li>
@@ -353,70 +379,81 @@
   </div>
 </section>
 
-<!-- TABLA -->
- <!-- TABLA -->
+<!-- TABLA DE COMPARACION -->
 <section id="plans" class="page-section colord">
   <div class="container">
     <div class="row">
     <div class="text-align: justify"> <div class="b1"> 
       
       <!-- Heading -->
-      <h3>Tabla de mediciones reales del comedor<br></h3>
-        <table class="results-table" role="table" aria-label="Tabla de distancias y incertidumbres">
+      <h3>Comparacion de Enfoques y Modelos<br></h3>
+      <p>Resultados obtenidos en la clasificacion binaria de radiografias (Normal vs Neumonia):</p>
+        <table class="results-table" role="table" aria-label="Tabla de comparacion de modelos">
           <thead>
             <tr>
-              <th>Elemento</th>
-              <th class="numeric">Distancia (píxeles)</th>
-              <th class="numeric">Distancia (cm)</th>
-              <th class="numeric">Incertidumbre (cm)</th>
-              <th class="numeric">Incertidumbre (%)</th>
+              <th>Modelo / Enfoque</th>
+              <th class="numeric">Accuracy</th>
+              <th class="numeric">Precision</th>
+              <th class="numeric">Recall</th>
+              <th class="numeric">F1-Score</th>
+              <th class="numeric">AUC-ROC</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-label="Elemento">Ancho del cuadro</td>
-              <td class="numeric" data-label="Distancia (píxeles)">100</td>
-              <td class="numeric" data-label="Distancia (cm)">10.73</td>
-              <td class="numeric" data-label="Incertidumbre (cm)">±2.15</td>
-              <td class="numeric" data-label="Incertidumbre (%)">±20.08</td>
+            <tr style="background-color: rgba(76, 175, 80, 0.2);">
+              <td data-label="Modelo"><strong>ResNet Transfer Learning (DL)</strong></td>
+              <td class="numeric" data-label="Accuracy"><strong>83.65%</strong></td>
+              <td class="numeric" data-label="Precision"><strong>79.88%</strong></td>
+              <td class="numeric" data-label="Recall"><strong>98.7%</strong></td>
+              <td class="numeric" data-label="F1-Score"><strong>88.3%</strong></td>
+              <td class="numeric" data-label="AUC-ROC"><strong>0.945</strong></td>
             </tr>
 
             <tr>
-              <td data-label="Elemento">Largo de la mesa</td>
-              <td class="numeric" data-label="Distancia (píxeles)">300</td>
-              <td class="numeric" data-label="Distancia (cm)">32.19</td>
-              <td class="numeric" data-label="Incertidumbre (cm)">±6.46</td>
-              <td class="numeric" data-label="Incertidumbre (%)">±20.08</td>
+              <td data-label="Modelo">k-NN (Tradicional)</td>
+              <td class="numeric" data-label="Accuracy">79%</td>
+              <td class="numeric" data-label="Precision">74.5%</td>
+              <td class="numeric" data-label="Recall">88%</td>
+              <td class="numeric" data-label="F1-Score">80.7%</td>
+              <td class="numeric" data-label="AUC-ROC">0.873</td>
             </tr>
 
             <tr>
-              <td data-label="Elemento">Altura de ventana</td>
-              <td class="numeric" data-label="Distancia (píxeles)">500</td>
-              <td class="numeric" data-label="Distancia (cm)">53.65</td>
-              <td class="numeric" data-label="Incertidumbre (cm)">±10.77</td>
-              <td class="numeric" data-label="Incertidumbre (%)">±20.08</td>
+              <td data-label="Modelo">Random Forest</td>
+              <td class="numeric" data-label="Accuracy">73%</td>
+              <td class="numeric" data-label="Precision">71%</td>
+              <td class="numeric" data-label="Recall">82%</td>
+              <td class="numeric" data-label="F1-Score">76.5%</td>
+              <td class="numeric" data-label="AUC-ROC">0.815</td>
             </tr>
 
             <tr>
-              <td data-label="Elemento">Ancho de silla</td>
-              <td class="numeric" data-label="Distancia (píxeles)">100</td>
-              <td class="numeric" data-label="Distancia (cm)">10.73</td>
-              <td class="numeric" data-label="Incertidumbre (cm)">±2.15</td>
-              <td class="numeric" data-label="Incertidumbre (%)">±20.08</td>
+              <td data-label="Modelo">XGBoost</td>
+              <td class="numeric" data-label="Accuracy">68%</td>
+              <td class="numeric" data-label="Precision">65%</td>
+              <td class="numeric" data-label="Recall">78%</td>
+              <td class="numeric" data-label="F1-Score">70%</td>
+              <td class="numeric" data-label="AUC-ROC">0.78</td>
             </tr>
 
             <tr>
-              <td data-label="Elemento">Altura de planta</td>
-              <td class="numeric" data-label="Distancia (píxeles)">300</td>
-              <td class="numeric" data-label="Distancia (cm)">32.19</td>
-              <td class="numeric" data-label="Incertidumbre (cm)">±6.46</td>
-              <td class="numeric" data-label="Incertidumbre (%)">±20.08</td>
+              <td data-label="Modelo">SVM</td>
+              <td class="numeric" data-label="Accuracy">64%</td>
+              <td class="numeric" data-label="Precision">62%</td>
+              <td class="numeric" data-label="Recall">76%</td>
+              <td class="numeric" data-label="F1-Score">68%</td>
+              <td class="numeric" data-label="AUC-ROC">0.755</td>
             </tr>
           </tbody>
         </table>   
 
+        <h4 style="margin-top: 30px;"><b>Observaciones</b></h4>
+        <ul style="margin-left: 40px;">
+          <li>Modelos tradicionales dependen del preprocesamiento y son sensibles al contraste y ruido.</li>
+          <li>ResNet Transfer Learning: mejor F1-score y generalizacion; captura patrones complejos sin ingenieria manual.</li>
+          <li>Estrategias frente al desbalance: weighting, oversampling y control de metricas.</li>
+        </ul>
       
-        </ol>
       </div></div>
     </div>
 
@@ -428,7 +465,6 @@
 </section>
 
 <!-- TABLA -->
- <!-- TABLA -->
 
 
 
@@ -436,9 +472,8 @@
 <section id="team" class="page-section">
   <div class="container">
     <div class="heading text-center"> 
-      <h2>Equipo de trabajo</h2>
-      <p style="display: flex; justify-content: center;">El desarrollo de este proyecto fue posible gracias al trabajo colaborativo y la integración efectiva de todos los integrantes del equipo, quienes aportaron su
-         experiencia y compromiso para alcanzar los objetivos propuestos.</p>
+      <h2>Equipo de Trabajo</h2>
+      <p style="display: flex; justify-content: center;">El desarrollo de este proyecto fue posible gracias al trabajo colaborativo y la integracion efectiva de todos los integrantes del equipo.</p>
     </div>
 
     <div class="team-content">
@@ -446,40 +481,40 @@
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-1.jpg" alt="John Doe">
+              <img src="images/photo-1.jpg" alt="Henrry Uribe">
             </div>
-            <h4>John Doe</h4>
-            <span class="pos">CEO</span>
+            <h4>Henrry Uribe C. O.</h4>
+            <span class="pos">Reporte, Analisis de datos, Extraccion de caracteristicas</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-2.jpg" alt="Larry Doe">
+              <img src="images/photo-2.jpg" alt="Laura Sanin">
             </div>
-            <h4>Larry Doe</h4>
-            <span class="pos">Art Director</span>
+            <h4>Laura Sanin Colorado</h4>
+            <span class="pos">Preprocesamiento, Analisis exploratorio, Documentacion</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-3.jpg" alt="Ranith Kays">
+              <img src="images/photo-3.jpg" alt="Juan Manuel Sanchez">
             </div>
-            <h4>Ranith Kays</h4>
-            <span class="pos">Manager</span>
+            <h4>Juan M. Sanchez R.</h4>
+            <span class="pos">Clasificadores tradicionales, Ajuste de parametros, Graficos</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-4.jpg" alt="Joan Ray">
+              <img src="images/photo-1.jpg" alt="Sebastian Palacio">
             </div>
-            <h4>Joan Ray</h4>
-            <span class="pos">Creative</span>
+            <h4>Sebastian Palacio B.</h4>
+            <span class="pos">Transfer Learning ResNet, Evaluacion Deep Learning</span>
           </div>
         </div>
       </div>
@@ -489,35 +524,45 @@
 
   <!--/.container--> 
 </section>
-<section id="contactUs" class="contact-parlex">
+<section id="conclusions" class="contact-parlex">
   <div class="parlex-back">
     <div class="container">
       <div class="row">
         <div class="heading text-center"> 
           <!-- Heading -->
-          <h2>Contact Us</h2>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+          <h2>Conclusiones</h2>
         </div>
       </div>
       <div class="row mrgn30">
-        <form method="post" action="" id="contactfrm" role="form">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-            </div>
-            <div class="form-group">
-              <label for="comments">Comments</label>
-              <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-              <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-            </div>
-            <div class="result"></div>
+        <div class="col-sm-12">
+          <div class="b1" style="background: rgba(255,255,255,0.9); padding: 30px; border-radius: 10px;">
+            <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8;">
+              <li>El <strong>preprocesamiento es esencial</strong> para la homogeneidad y calidad de caracteristicas.</li>
+              <li>Los <strong>descriptores tradicionales</strong> funcionan, pero con limitaciones frente a variabilidad anatomica y contraste.</li>
+              <li><strong>ResNet Transfer Learning</strong> supera las metricas clasicas; es robusto y eficiente.</li>
+              <li>KDE/CDF y extraccion de caracteristicas confirman diferencias de contraste y textura entre clases.</li>
+              <li><strong>Aplicaciones clinicas:</strong> soporte a radiologos, estandarizacion de diagnosticos y reduccion de tiempo de analisis.</li>
+            </ul>
+
+            <h4 style="margin-top: 30px;"><b>Mejoras Sugeridas</b></h4>
+            <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8;">
+              <li>Fine-tuning completo de ResNet</li>
+              <li>Aumento del dataset con data augmentation realista</li>
+              <li>Ensemble de modelos DL + tradicionales</li>
+              <li>Validacion cruzada k-fold</li>
+              <li>Validacion externa con datasets de otros hospitales</li>
+            </ul>
+
+            <h4 style="margin-top: 30px;"><b>Referencias</b></h4>
+            <ul style="margin-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li>Dalal, N., & Triggs, B. (2005). <em>Histograms of oriented gradients for human detection</em>. CVPR.</li>
+              <li>Ojala, T., Pietikainen, M., & Maenpaa, T. (2002). <em>Multiresolution gray-scale and rotation invariant texture classification with LBP</em>. IEEE TPAMI.</li>
+              <li>Haralick, R. M. (1973). <em>Textural features for image classification</em>. IEEE TSMC.</li>
+              <li>He, K., Zhang, X., Ren, S., & Sun, J. (2016). <em>Deep residual learning for image recognition</em>. CVPR.</li>
+              <li>Pizer, S. et al. (1987). <em>Adaptive histogram equalization and its variations</em>. CVGIP.</li>
+            </ul>
           </div>
-        </form>
+        </div>
       </div>
     </div>
     <!--/.container--> 
@@ -526,55 +571,35 @@
 <footer>
 <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
             	<div class="col">
-                   <h4>Contact us</h4>
+                   <h4>Informacion del Proyecto</h4>
                    <ul>
-                        <li>1th Avenue, New York - United States</li>
-                        <li>Phone: +22 342 2345 345 | Fax: +22 724 2342 343 </li>
-                        <li>Email: <a href="mailto:info@example.com" title="Email Us">info@example.com</a></li>
-                        <li>Skype: <a href="skype:my.test?call" title="Skype us">my-company</a></li>
+                        <li>Universidad Nacional de Colombia - Sede Medellin</li>
+                        <li>Facultad de Minas</li>
+                        <li>Maestria en Ingenieria - Analitica</li>
+                        <li>Vision por Computador (3009228)</li>
+                        <li>Semestre 2025-01</li>
                     </ul>
                  </div>
             </div>
             
-            <div class="col-md-3">
+            <div class="col-md-4">
             	<div class="col">
-                    <h4>Mailing list</h4>
-                    <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat.</p>
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Your email address...">
-                            <span class="input-group-btn">
-                                <button class="btn" type="button">Go!</button>
-                            </span>
-                        </div>
-                    </form>
+                    <h4>Dataset</h4>
+                    <p>Chest X-Ray Images (Pneumonia)</p>
+                    <p>Fuente: Kaggle</p>
+                    <p>5,856 imagenes totales</p>
+                    <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia" target="_blank" class="btn">Ver Dataset</a>
                 </div>
             </div>
             
-            <div class="col-md-3">
-            	<div class="col col-social-icons">
-                    <h4>Follow us</h4>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    <a href="#"><i class="fa fa-flickr"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-skype"></i></a>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                </div>
-            </div>
-
-             <div class="col-md-3">
-             	<div class="col">
-                    <h4>Latest News</h4>
-                    <p>
-                    Lorem ipsum dolor labitur scsstie per sit amet, ea eum labitur scsstie percipitoleat.
-                    <br><br>
-                    <a href="#" class="btn">Get Mores!</a>
-                    </p>
+            <div class="col-md-4">
+            	<div class="col">
+                    <h4>Tecnologias Utilizadas</h4>
+                    <p>Python, OpenCV, scikit-learn</p>
+                    <p>PyTorch, ResNet</p>
+                    <p>NumPy, Pandas, Matplotlib</p>
                 </div>
             </div>
         </div>
@@ -586,7 +611,7 @@
 <section class="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center"> Copyright 2014 | All Rights Reserved -- Template by <a href="http://webThemez.com">WebThemez.com</a> </div>
+      <div class="col-sm-12 text-center"> Universidad Nacional de Colombia - 2025 | Vision por Computador </div>
     </div>
     <!-- / .row --> 
   </div>
