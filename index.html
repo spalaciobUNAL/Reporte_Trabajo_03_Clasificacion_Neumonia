@@ -11,8 +11,8 @@
 <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-<title>Clasificacion Automatica de Neumonia en Radiografias de Torax</title>
-<meta name="description" content="Clasificacion binaria de radiografias usando descriptores tradicionales y Deep Learning">
+<title>Clasificación automática de neumonía en radiografías de tórax</title>
+<meta name="description" content="Clasificación binaria de radiografías usando descriptores tradicionales y Deep Learning">
 <meta name="author" content="Universidad Nacional de Colombia">
 <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,13 +42,13 @@
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
           <li class="active" id="firstLink"><a href="#home" class="scroll-link">Integrantes</a></li>
-          <li><a href="#services" class="scroll-link">Introduccion</a></li>
-          <li><a href="#aboutUs" class="scroll-link">Marco Teorico</a></li>
-          <li><a href="#Metodologia" class="scroll-link">Metodologia</a></li>
+          <li><a href="#services" class="scroll-link">Introducción</a></li>
+          <li><a href="#aboutUs" class="scroll-link">Marco teórico</a></li>
+          <li><a href="#Metodologia" class="scroll-link">Metodología</a></li>
           <li><a href="#work" class="scroll-link">Resultados</a></li>
-          <li><a href="#plans" class="scroll-link">Comparacion de Modelos</a></li>
-          <li><a href="#team" class="scroll-link">Equipo</a></li>
+          <li><a href="#plans" class="scroll-link">Comparación de modelos</a></li>
           <li><a href="#conclusions" class="scroll-link">Conclusiones</a></li>
+          <li><a href="#team" class="scroll-link">Equipo</a></li>
         </ul>
       </div>
       <!--/.navbar-collapse--> 
@@ -59,39 +59,37 @@
 </header>
 <!--/.header-->
 <div id="#top"></div>
-<section id="home">
-  <div class="banner-container"> 
+<section id="home" style="min-height: auto; padding-top: 80px;">
+  <div class="banner-container" style="max-height: 250px; overflow: hidden; position: relative;"> 
   <!-- Slider -->
-        <div id="main-slider" class="flexslider">
+        <div id="main-slider" class="flexslider" style="max-height: 250px;">
             <ul class="slides">
-              <li>
-                <img src="images/slides/1.jpg" alt="" />
-                <div class="flex-caption container">
-          <h4>Integrantes:</h4>      
-					<p>Laura Sanin Colorado</p> 
-          <p>Juan Manuel Sanchez Restrepo</p> 
-          <p>Sebastian Palacio Betancur</p> 
-          <p>Henrry Uribe Cabrera Ordonez</p> 
-				
+              <li style="max-height: 250px; position: relative;">
+                <img src="images/slides/1.jpg" alt="" style="max-height: 250px; object-fit: cover;" />
+                <div class="flex-caption container" style="padding: 10px 0; position: absolute; top: 0; left: 0; right: 0; z-index: 1000">
+                  <h4 style="font-size: 18px; margin-bottom: 5px; color: white;">Integrantes:</h4>      
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Laura Sanín Colorado</p> 
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Juan Manuel Sánchez Restrepo</p> 
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Sebastián Palacio Betancur</p> 
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Henrry Uribe Cabrera Ordóñez</p> 
                 </div>
               </li>
-              <li>
-                <img src="images/slides/2.jpg" alt="" />
-                <div class="flex-caption container">
-                    <h4>Informacion del Curso</h4> 
-					<p>Curso: Vision por Computador (3009228)</p> 
-          <p>Semestre: 2025-01</p>
-          <p>Facultad de Minas - Universidad Nacional de Colombia</p>
-          <p>Departamento de Ciencias de la Computacion y de la Decision</p>
-			
+              <li style="max-height: 250px; position: relative;">
+                <img src="images/slides/2.jpg" alt="" style="max-height: 250px; object-fit: cover;" />
+                <div class="flex-caption container" style="padding: 10px 0; position: absolute; top: 0; left: 0; right: 0; z-index: 1000">
+                  <h4 style="font-size: 18px; margin-bottom: 5px; color: white;">Información del curso</h4> 
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Curso: Visión por Computador (3009228)</p> 
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Semestre: 2025-01</p>
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Facultad de Minas - Universidad Nacional de Colombia</p>
+                  <p style="margin: 2px 0; font-size: 12px; color: white;">Departamento de Ciencias de la Computación y de la Decisión</p>
                 </div>
               </li>
             </ul>
         </div>
 	<!-- end slider -->
   </div>
-  <div class="container hero-text2">
-  <h3>Clasificacion Automatica de Neumonia en Radiografias de Torax</h3>
+  <div class="container hero-text2" style="padding: 15px 0;">
+  <h3 style="font-size: 22px; margin: 0;">Clasificación automática de neumonía en radiografías de tórax</h3>
   </div>
 </section>
 <section id="services" class="page-section colord">
@@ -99,27 +97,27 @@
     <div class="row"> 
       <!-- item -->
       <div class="text-align: justify"><div class="b1"> 
-        <h3>INTRODUCCION</h3>
-        <p>La identificacion temprana y precisa de patologias pulmonares mediante radiografias de torax es un componente fundamental del diagnostico clinico. La interpretacion manual depende fuertemente de la experiencia del especialista y puede verse limitada en instituciones con alta demanda, escasez de radiologos o variabilidad interobservador.</p>
+        <h3>Introducción</h3>
+        <p>La identificación temprana y precisa de patologías pulmonares mediante radiografías de tórax es un componente fundamental del diagnóstico clínico. La interpretación manual depende fuertemente de la experiencia del especialista y puede verse limitada en instituciones con alta demanda, escasez de radiólogos o variabilidad interobservador.</p>
 
-        <p>Los sistemas de apoyo al diagnostico basados en vision por computador ofrecen una alternativa para aumentar la precision y estandarizar interpretaciones.</p>
+        <p>Los sistemas de apoyo al diagnóstico basados en visión por computador ofrecen una alternativa para aumentar la precisión y estandarizar interpretaciones.</p>
 
-        <p>Este proyecto aborda la <strong>clasificacion binaria de radiografias</strong> (normales vs neumonia), usando:</p>
+        <p>Este proyecto aborda la <strong>clasificación binaria de radiografías</strong> (normales vs neumonía), usando:</p>
         <ol style="margin-left: 40px;">
-          <li><strong>Descriptores tradicionales</strong> (HOG, LBP, Haralick, Zernike) + modelos clasicos de ML.</li>
+          <li><strong>Descriptores tradicionales</strong> (HOG, LBP, Haralick, Zernike) + modelos clásicos de ML.</li>
           <li><strong>Modelos profundos preentrenados</strong> (ResNet con Transfer Learning).</li>
         </ol>
 
         <h4><b>Objetivos</b></h4>
-        <p><strong>General:</strong> Desarrollar un sistema automatizado capaz de clasificar radiografias de torax como normales o con neumonia, evaluando la eficacia de enfoques tradicionales y de deep learning.</p>
+        <p><strong>General:</strong> Desarrollar un sistema automatizado capaz de clasificar radiografías de tórax como normales o con neumonía, evaluando la eficacia de enfoques tradicionales y de deep learning.</p>
         
-        <p><strong>Especificos:</strong></p>
+        <p><strong>Específicos:</strong></p>
         <ul style="margin-left: 40px;">
-          <li>Analizar la calidad y caracteristicas del dataset.</li>
-          <li>Extraer y evaluar descriptores tradicionales de imagenes.</li>
-          <li>Entrenar y comparar clasificadores clasicos y modelos de deep learning.</li>
-          <li>Determinar metricas de desempeno y robustez frente a variabilidad de imagenes.</li>
-          <li>Proponer mejoras y posibles aplicaciones clinicas.</li>
+          <li>Analizar la calidad y características del dataset.</li>
+          <li>Extraer y evaluar descriptores tradicionales de imágenes.</li>
+          <li>Entrenar y comparar clasificadores clásicos y modelos de deep learning.</li>
+          <li>Determinar métricas de desempeño y robustez frente a variabilidad de imágenes.</li>
+          <li>Proponer mejoras y posibles aplicaciones clínicas.</li>
         </ul>
       </div></div>
  
@@ -134,40 +132,40 @@
     <div class="text-align: justify"> <div class="b1"> 
       
       <!-- Heading -->
-        <h3>MARCO TEORICO<br><br></h3>
+        <h3>Marco teórico</h3>
         
-        <h4><b>Preprocesamiento de Imagenes Medicas</b></h4>
+        <h4><b>Preprocesamiento de imágenes médicas</b></h4>
         <ul style="margin-left: 40px;">
           <li><strong>Redimensionamiento:</strong> uniformidad de dimensiones.</li>
-          <li><strong>Escala de grises:</strong> reduce dimensionalidad manteniendo informacion clinica.</li>
-          <li><strong>Normalizacion:</strong> homogeneiza intensidades entre imagenes.</li>
-          <li><strong>CLAHE:</strong> mejora contraste local evitando amplificacion de ruido.</li>
+          <li><strong>Escala de grises:</strong> reduce dimensionalidad manteniendo información clínica.</li>
+          <li><strong>Normalización:</strong> homogeneiza intensidades entre imágenes.</li>
+          <li><strong>CLAHE:</strong> mejora contraste local evitando amplificación de ruido.</li>
         </ul>
-        <p>Estas tecnicas permiten consistencia y comparabilidad entre descriptores tradicionales y redes neuronales.</p>
+        <p>Estas técnicas permiten consistencia y comparabilidad entre descriptores tradicionales y redes neuronales.</p>
 
-      <h4><b>Descriptores Tradicionales</b></h4>
+      <h4><b>Descriptores tradicionales</b></h4>
       <ul style="margin-left: 40px;">
-        <li><strong>HOG (Histogram of Oriented Gradients):</strong> captura gradientes locales, ideal para bordes y estructuras anatomicas.</li>
-        <li><strong>LBP (Local Binary Patterns):</strong> describe microtexturas robustas a cambios de iluminacion.</li>
-        <li><strong>Haralick / GLCM:</strong> atributos de homogeneidad, contraste y correlacion.</li>
-        <li><strong>Momentos de Zernike:</strong> invariantes a rotacion, capturan informacion global de forma.</li>
+        <li><strong>HOG (Histogram of Oriented Gradients):</strong> captura gradientes locales, ideal para bordes y estructuras anatómicas.</li>
+        <li><strong>LBP (Local Binary Patterns):</strong> describe microtexturas robustas a cambios de iluminación.</li>
+        <li><strong>Haralick / GLCM:</strong> atributos de homogeneidad, contraste y correlación.</li>
+        <li><strong>Momentos de Zernike:</strong> invariantes a rotación, capturan información global de forma.</li>
       </ul>
 
-      <h4><b>Metodos de Clasificacion</b></h4>
+      <h4><b>Métodos de clasificación</b></h4>
       <ul style="margin-left: 40px;">
         <li><strong>SVM (Support Vector Machine)</strong></li>
         <li><strong>Random Forest</strong></li>
         <li><strong>XGBoost</strong></li>
         <li><strong>k-NN (k-Nearest Neighbors)</strong></li>
-        <li><strong>Regresion Logistica</strong></li>
+        <li><strong>Regresión logística</strong></li>
       </ul>
-      <p>Todos requieren vectores de caracteristicas construidos previamente.</p>
+      <p>Todos requieren vectores de características construidos previamente.</p>
 
       <h4><b>Deep Learning - Transfer Learning</b></h4>
       <ul style="margin-left: 40px;">
         <li><strong>ResNet preentrenada en ImageNet.</strong></li>
-        <li>Capas convolucionales como extractor de caracteristicas + capas finales ajustadas a clasificacion binaria.</li>
-        <li><em>Skip connections</em> permiten aprender representaciones complejas sin degradacion.</li>
+        <li>Capas convolucionales como extractor de características + capas finales ajustadas a clasificación binaria.</li>
+        <li><em>Skip connections</em> permiten aprender representaciones complejas sin degradación.</li>
       </ul>
    
       </div></div>
@@ -187,45 +185,45 @@
     <div class="text-align: justify"> <div class="b1"> 
       
       <!-- Heading -->
-        <h3>METODOLOGIA<br></h3>
+        <h3>Metodología</h3>
         
         <h4><b>Dataset</b></h4>
-        <p>El proyecto utilizo un dataset publico de radiografias de torax del repositorio Kaggle:</p>
+        <p>El proyecto utilizó un dataset público de radiografías de tórax del repositorio Kaggle:</p>
         <ul style="margin-left: 40px;">
           <li><strong>Fuente:</strong> <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia" target="_blank">Kaggle - Chest X-Ray Images (Pneumonia)</a></li>
-          <li><strong>Numero total de imagenes:</strong> 5,856</li>
+          <li><strong>Número total de imágenes:</strong> 5,856</li>
           <li><strong>Normales:</strong> 1,583</li>
-          <li><strong>Neumonia:</strong> 4,273</li>
-          <li><strong>Formato:</strong> JPEG, resolucion variable (principalmente 1024x1024 px)</li>
-          <li><strong>Division:</strong> Train 70% / Test 30%</li>
+          <li><strong>Neumonía:</strong> 4,273</li>
+          <li><strong>Formato:</strong> JPEG, resolución variable (principalmente 1024x1024 px)</li>
+          <li><strong>División:</strong> Train 70% / Test 30%</li>
         </ul>
 
-        <h4><b>Pipeline de Procesamiento</b></h4>
-        <p>El desarrollo siguio un flujo modular documentado en tres notebooks principales:</p>
+        <h4><b>Pipeline de procesamiento</b></h4>
+        <p>El desarrollo siguió un flujo modular documentado en tres notebooks principales:</p>
         <ol style="margin-left: 40px;">
-          <li><strong>01_exploratory_analysis_clean.ipynb</strong> - Analisis exploratorio, visualizacion de tamanos, contraste, nitidez y preprocesamiento.</li>
-          <li><strong>02_feature_extraction.ipynb</strong> - Extraccion de 26,244 dimensiones de caracteristicas: HOG, LBP, GLCM, Momentos de Hu, filtros Gabor.</li>
-          <li><strong>03_classification.ipynb</strong> - Entrenamiento de clasificadores tradicionales y ResNet Transfer Learning, evaluacion con metricas.</li>
+          <li><strong>01_exploratory_analysis_clean.ipynb</strong> - Análisis exploratorio, visualización de tamaños, contraste, nitidez y preprocesamiento.</li>
+          <li><strong>02_feature_extraction.ipynb</strong> - Extracción de 26,244 dimensiones de características: HOG, LBP, GLCM, Momentos de Hu, filtros Gabor.</li>
+          <li><strong>03_classification.ipynb</strong> - Entrenamiento de clasificadores tradicionales y ResNet Transfer Learning, evaluación con métricas.</li>
         </ol>
 
-      <h4><b>Extraccion de Caracteristicas</b></h4>
-      <p>Se extrajeron <strong>26,244 dimensiones de caracteristicas</strong> incluyendo:</p>
+      <h4><b>Extracción de características</b></h4>
+      <p>Se extrajeron <strong>26,244 dimensiones de características</strong> incluyendo:</p>
       <ul style="margin-left: 40px;">
         <li><strong>HOG:</strong> Detecta costillas, columna, contornos pulmonares. Valores normalizados: -7.58 a 10.</li>
-        <li><strong>Momentos de Hu y Geometria:</strong> Area: 22,372 px, Perimetro: 4,243, Excentricidad: 0.57, Solidez: 0.60</li>
-        <li><strong>LBP:</strong> Textura local robusta a iluminacion. Diferencia tejido sano vs patologico.</li>
+        <li><strong>Momentos de Hu y geometría:</strong> Área: 22,372 px, Perímetro: 4,243, Excentricidad: 0.57, Solidez: 0.60</li>
+        <li><strong>LBP:</strong> Textura local robusta a iluminación. Diferencia tejido sano vs patológico.</li>
         <li><strong>GLCM:</strong> 60 dimensiones. Contraste: 9.52, Disimilitud: 1.89, Homogeneidad: 0.49</li>
-        <li><strong>Filtros Gabor:</strong> Detectan patrones segun frecuencia/orientacion.</li>
-        <li><strong>Estadisticas basicas:</strong> Media: 0.52, SD: 0.24, Varianza: 0.058, Entropia: -43.78</li>
+        <li><strong>Filtros Gabor:</strong> Detectan patrones según frecuencia/orientación.</li>
+        <li><strong>Estadísticas básicas:</strong> Media: 0.52, SD: 0.24, Varianza: 0.058, Entropía: -43.78</li>
       </ul>
 
-      <h4><b>Decisiones Tecnicas</b></h4>
+      <h4><b>Decisiones técnicas</b></h4>
       <ul style="margin-left: 40px;">
-        <li>Preprocesamiento: gris, redimensionamiento, normalizacion, CLAHE.</li>
-        <li>Division train/test con estratificacion.</li>
-        <li>Estandarizacion de caracteristicas antes de clasificacion.</li>
-        <li>Evaluacion: matriz de confusion, precision, recall, F1, AUC-ROC.</li>
-        <li>Comparacion sistematica entre modelos tradicionales y ResNet.</li>
+        <li>Preprocesamiento: gris, redimensionamiento, normalización, CLAHE.</li>
+        <li>División train/test con estratificación.</li>
+        <li>Estandarización de características antes de clasificación.</li>
+        <li>Evaluación: matriz de confusión, precision, recall, F1, AUC-ROC.</li>
+        <li>Comparación sistemática entre modelos tradicionales y ResNet.</li>
       </ul>
       </div></div>
     </div>
@@ -241,27 +239,11 @@
     <!--/.container--> 
       <!--/.container--> 
 
-<section id="clients">
-  <div id="demo" class="clients">
-    <div class="container"> 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="customNavigation"> <a class="prev"><i class="fa fa-chevron-circle-left"></i></a> <a class="next"><i class="fa fa-chevron-circle-right"></i></a> </div>
-          <div id="owl-demo" class="owl-carousel">
-            <div class="item"> <span class="helper"> <img src="images/clients/1.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/2.png" alt="client" /></span> </div>
-            <div class="item"> <span class="helper"> <img src="images/clients/3.png" alt="client" /></span> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="work" class="page-section page">
   <div class="container text-center">
     <div class="heading">
       <h2>Resultados</h2>
-      <p>Visualizaciones del proceso de extraccion de caracteristicas, entrenamiento y evaluacion de modelos de clasificacion.</p>
+      <p>Galería de resultados que ilustra desde el preprocesamiento y la extracción de características (HOG, LBP, Gabor) hasta la evaluación comparativa de modelos. Se destacan las matrices de confusión que evidencian la capacidad superior de los modelos profundos para minimizar los falsos negativos.</p>
     </div>
 
     <div class="row">
@@ -270,13 +252,13 @@
 
           <!-- Filtros -->
           <ul class="filters list-inline mb-4">
-            <li><a class="active" data-filter="*" href="#">Todas las imagenes</a></li>
+            <li><a class="active" data-filter="*" href="#">Todas las imágenes</a></li>
             <li><a data-filter=".dataset" href="#">Dataset</a></li>
             <li><a data-filter=".preprocesamiento" href="#">Preprocesamiento</a></li>
             <li><a data-filter=".descriptores" href="#">Descriptores</a></li>
-            <li><a data-filter=".tradicional" href="#">Modelos Tradicionales</a></li>
+            <li><a data-filter=".tradicional" href="#">Modelos tradicionales</a></li>
             <li><a data-filter=".deeplearning" href="#">Deep Learning</a></li>
-            <li><a data-filter=".comparacion" href="#">Comparacion</a></li>
+            <li><a data-filter=".comparacion" href="#">Comparación</a></li>
           </ul>
 
           <!-- Galeria de imagenes -->
@@ -286,7 +268,7 @@
               <a href="images/work/1.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/1.png" alt="">
-                  <div class="overlay"><span>Muestras del Dataset</span></div>
+                  <div class="overlay"><span>Muestras del dataset</span></div>
                 </div>
               </a>
             </li>
@@ -295,7 +277,7 @@
               <a href="images/work/2.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/2.png" alt="">
-                  <div class="overlay"><span>Pipeline de Preprocesamiento</span></div>
+                  <div class="overlay"><span>Pipeline de preprocesamiento</span></div>
                 </div>
               </a>
             </li>
@@ -304,7 +286,7 @@
               <a href="images/work/3.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/3.png" alt="">
-                  <div class="overlay"><span>Visualizacion HOG</span></div>
+                  <div class="overlay"><span>Visualización HOG</span></div>
                 </div>
               </a>
             </li>
@@ -313,7 +295,7 @@
               <a href="images/work/4.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/4.png" alt="">
-                  <div class="overlay"><span>Caracteristicas LBP</span></div>
+                  <div class="overlay"><span>Características LBP</span></div>
                 </div>
               </a>
             </li>
@@ -331,7 +313,7 @@
               <a href="images/work/6.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/6.png" alt="">
-                  <div class="overlay"><span>Matrices de Confusion - Tradicionales</span></div>
+                  <div class="overlay"><span>Matrices de confusión - Tradicionales</span></div>
                 </div>
               </a>
             </li>
@@ -349,7 +331,7 @@
               <a href="images/work/8.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/8.png" alt="">
-                  <div class="overlay"><span>Matrices de Confusion - Deep Learning</span></div>
+                  <div class="overlay"><span>Matrices de confusión - Deep Learning</span></div>
                 </div>
               </a>
             </li>
@@ -367,7 +349,7 @@
               <a href="images/work/10.png" class="fancybox">
                 <div class="card">
                   <img src="images/work/10.png" alt="">
-                  <div class="overlay"><span>Comparacion Final de Modelos</span></div>
+                  <div class="overlay"><span>Comparación final de modelos</span></div>
                 </div>
               </a>
             </li>
@@ -386,22 +368,25 @@
     <div class="text-align: justify"> <div class="b1"> 
       
       <!-- Heading -->
-      <h3>Comparacion de Enfoques y Modelos<br></h3>
-      <p>Resultados obtenidos en la clasificacion binaria de radiografias (Normal vs Neumonia):</p>
-        <table class="results-table" role="table" aria-label="Tabla de comparacion de modelos">
+      <h3>Comparación de enfoques y modelos</h3>
+      <p>Resultados obtenidos en la clasificación binaria de radiografías (Normal vs Neumonía), integrando métricas de desempeño y análisis de importancia de características.</p>
+        
+        <!-- Tabla de Resultados -->
+        <div class="table-responsive">
+        <table class="results-table" role="table" aria-label="Tabla de comparación de modelos">
           <thead>
             <tr>
               <th>Modelo / Enfoque</th>
               <th class="numeric">Accuracy</th>
               <th class="numeric">Precision</th>
-              <th class="numeric">Recall</th>
+              <th class="numeric">Recall (Sensibilidad)</th>
               <th class="numeric">F1-Score</th>
               <th class="numeric">AUC-ROC</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="background-color: rgba(76, 175, 80, 0.2);">
-              <td data-label="Modelo"><strong>ResNet Transfer Learning (DL)</strong></td>
+            <tr style="background-color: rgba(76, 175, 80, 0.2); border-left: 5px solid #4CAF50;">
+              <td data-label="Modelo"><strong>ResNet Transfer Learning (DL)</strong><br><span style="font-size:0.8em; color:#666;">Mejor Desempeño General</span></td>
               <td class="numeric" data-label="Accuracy"><strong>83.65%</strong></td>
               <td class="numeric" data-label="Precision"><strong>79.88%</strong></td>
               <td class="numeric" data-label="Recall"><strong>98.7%</strong></td>
@@ -410,7 +395,7 @@
             </tr>
 
             <tr>
-              <td data-label="Modelo">k-NN (Tradicional)</td>
+              <td data-label="Modelo">k-NN (Tradicional)<br><span style="font-size:0.8em; color:#666;">Mejor Tradicional</span></td>
               <td class="numeric" data-label="Accuracy">79%</td>
               <td class="numeric" data-label="Precision">74.5%</td>
               <td class="numeric" data-label="Recall">88%</td>
@@ -446,14 +431,30 @@
             </tr>
           </tbody>
         </table>   
+        </div>
 
-        <h4 style="margin-top: 30px;"><b>Observaciones</b></h4>
-        <ul style="margin-left: 40px;">
-          <li>Modelos tradicionales dependen del preprocesamiento y son sensibles al contraste y ruido.</li>
-          <li>ResNet Transfer Learning: mejor F1-score y generalizacion; captura patrones complejos sin ingenieria manual.</li>
-          <li>Estrategias frente al desbalance: weighting, oversampling y control de metricas.</li>
-        </ul>
-      
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-md-6">
+            <h4 style="color: #333;"><b>Análisis de Importancia de Características</b></h4>
+            <p>El análisis de importancia de variables (Feature Importance) realizado mediante Random Forest revela insights cruciales sobre qué patrones visuales son más relevantes para el diagnóstico:</p>
+            <ul style="margin-left: 20px;">
+              <li><strong>Dominio de HOG:</strong> Las características derivadas del <em>Histogram of Oriented Gradients</em> ocupan las primeras posiciones en el ranking de importancia. Esto indica que la <strong>estructura de los bordes</strong> (costillas, diafragma y contornos pulmonares) es el indicador más fuerte de patología.</li>
+              <li><strong>Textura vs Forma:</strong> Aunque los descriptores de textura (LBP, GLCM) aportan información, los modelos dependen más de la geometría local capturada por HOG, sugiriendo que la neumonía altera significativamente los gradientes visuales en la radiografía.</li>
+              <li><strong>Dimensionalidad:</strong> De las 26,244 características iniciales, un subconjunto reducido (top 100-200) contiene la mayor parte de la información discriminante.</li>
+            </ul>
+          </div>
+          
+          <div class="col-md-6">
+            <h4 style="color: #333;"><b>Interpretación Clínica y Sensibilidad</b></h4>
+            <p>En el diagnóstico médico, el costo de un falso negativo (paciente enfermo no detectado) es mucho mayor que el de un falso positivo.</p>
+            <ul style="margin-left: 20px;">
+              <li><strong>Recall Crítico:</strong> El modelo ResNet alcanzó una sensibilidad (Recall) del <strong>98.7%</strong>, lo que significa que detecta casi la totalidad de los casos de neumonía presentes. Esto lo valida como una herramienta de <em>tamizaje</em> confiable.</li>
+              <li><strong>Robustez de k-NN:</strong> A pesar de ser un algoritmo simple, k-NN logró un Recall del 88%, superando a métodos más complejos como SVM. Esto sugiere que los casos de neumonía tienden a agruparse en el espacio de características, facilitando la clasificación por vecindad.</li>
+              <li><strong>Limitaciones:</strong> La precisión del 79.88% en el mejor modelo implica una tasa moderada de falsos positivos, lo cual es aceptable si el sistema actúa como asistente del radiólogo y no como decisor final.</li>
+            </ul>
+          </div>
+        </div>
+
       </div></div>
     </div>
 
@@ -469,11 +470,53 @@
 
 
 
+<section id="conclusions" class="page-section colord">
+  <div class="container">
+    <div class="row">
+      <div class="heading text-center"> 
+        <h2 style="color: #333;">Conclusiones y Trabajo Futuro</h2>
+        <p>Síntesis de hallazgos técnicos, impacto clínico y direcciones futuras.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="b1" style="background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          
+          <h4 style="margin-top: 0; color: #333;"><b>Hallazgos Principales</b></h4>
+          <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8; color: #333;">
+            <li><strong>Superioridad del Deep Learning:</strong> El modelo ResNet Transfer Learning demostró ser la estrategia más robusta (F1-Score 88.3%), eliminando la necesidad de ingeniería de características manual y aprendiendo representaciones jerárquicas complejas directamente de los píxeles.</li>
+            <li><strong>Relevancia de los Bordes (HOG):</strong> Entre los métodos tradicionales, los descriptores HOG resultaron ser los más discriminantes. Esto confirma que la estructura de la caja torácica y los contornos pulmonares contienen la mayor carga de información diagnóstica, más que la textura pura.</li>
+            <li><strong>Validación Clínica (Recall):</strong> La alta sensibilidad obtenida (98.7%) posiciona al sistema como una herramienta efectiva de <em>triaje</em>, capaz de alertar sobre casi la totalidad de casos patológicos, minimizando el riesgo de dar de alta a pacientes enfermos.</li>
+            <li><strong>Rol del Preprocesamiento:</strong> Técnicas como CLAHE y normalización fueron determinantes para homogeneizar las muestras, permitiendo que incluso clasificadores simples como k-NN alcanzaran un rendimiento competitivo (88% Recall).</li>
+          </ul>
+
+          <h4 style="margin-top: 30px; color: #333;"><b>Trabajo Futuro y Mejoras</b></h4>
+          <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8; color: #333;">
+            <li><strong>Fine-tuning Profundo:</strong> Descongelar capas adicionales de ResNet para adaptar no solo las capas finales, sino también los extractores de características de medio nivel a las especificidades de las radiografías.</li>
+            <li><strong>Data Augmentation Avanzado:</strong> Implementar técnicas como MixUp o CutMix para generar variaciones más realistas y mejorar la robustez frente a diferentes calidades de imagen.</li>
+            <li><strong>Ensemble Híbrido:</strong> Combinar las predicciones de la CNN con los vectores de características HOG mediante un Voting Classifier para aprovechar lo mejor de ambos mundos (abstracción profunda + geometría explícita).</li>
+            <li><strong>Explicabilidad (XAI):</strong> Integrar mapas de calor (Grad-CAM) para visualizar qué regiones de la radiografía está "mirando" la red neuronal, aumentando la confianza del personal médico en el sistema.</li>
+          </ul>
+
+          <h4 style="margin-top: 30px; color: #333;"><b>Referencias Clave</b></h4>
+          <ul style="margin-left: 20px; font-size: 14px; line-height: 1.6; color: #333;">
+            <li>He, K., Zhang, X., Ren, S., & Sun, J. (2016). <em>Deep residual learning for image recognition</em>. CVPR.</li>
+            <li>Dalal, N., & Triggs, B. (2005). <em>Histograms of oriented gradients for human detection</em>. CVPR.</li>
+            <li>Ojala, T., Pietikäinen, M., & Mäenpää, T. (2002). <em>Multiresolution gray-scale and rotation invariant texture classification with LBP</em>. IEEE TPAMI.</li>
+            <li>Rajpurkar, P., et al. (2017). <em>CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning</em>. arXiv.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+
 <section id="team" class="page-section">
   <div class="container">
     <div class="heading text-center"> 
-      <h2>Equipo de Trabajo</h2>
-      <p style="display: flex; justify-content: center;">El desarrollo de este proyecto fue posible gracias al trabajo colaborativo y la integracion efectiva de todos los integrantes del equipo.</p>
+      <h2>Equipo de trabajo</h2>
+      <p style="display: flex; justify-content: center;">El desarrollo de este proyecto fue posible gracias al trabajo colaborativo y la integración efectiva de todos los integrantes del equipo.</p>
     </div>
 
     <div class="team-content">
@@ -484,88 +527,41 @@
               <img src="images/photo-1.jpg" alt="Henrry Uribe">
             </div>
             <h4>Henrry Uribe C. O.</h4>
-            <span class="pos">Reporte, Analisis de datos, Extraccion de caracteristicas</span>
+            <span class="pos">Reporte, Análisis de datos, Extracción de características</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-2.jpg" alt="Laura Sanin">
+              <img src="images/photo-2.jpg" alt="Laura Sanín">
             </div>
-            <h4>Laura Sanin Colorado</h4>
-            <span class="pos">Preprocesamiento, Analisis exploratorio, Documentacion</span>
+            <h4>Laura Sanín Colorado</h4>
+            <span class="pos">Preprocesamiento, Análisis exploratorio, Documentación</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-3.jpg" alt="Juan Manuel Sanchez">
+              <img src="images/photo-3.jpg" alt="Juan Manuel Sánchez">
             </div>
-            <h4>Juan M. Sanchez R.</h4>
-            <span class="pos">Clasificadores tradicionales, Ajuste de parametros, Graficos</span>
+            <h4>Juan M. Sánchez R.</h4>
+            <span class="pos">Clasificadores tradicionales, Ajuste de parámetros, Gráficos</span>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-6">
           <div class="team-member pDark">
             <div class="member-img">
-              <img src="images/photo-1.jpg" alt="Sebastian Palacio">
+              <img src="images/photo-1.jpg" alt="Sebastián Palacio">
             </div>
-            <h4>Sebastian Palacio B.</h4>
-            <span class="pos">Transfer Learning ResNet, Evaluacion Deep Learning</span>
+            <h4>Sebastián Palacio B.</h4>
+            <span class="pos">Transfer Learning ResNet, Evaluación Deep Learning</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-  <!--/.container--> 
-</section>
-<section id="conclusions" class="contact-parlex">
-  <div class="parlex-back">
-    <div class="container">
-      <div class="row">
-        <div class="heading text-center"> 
-          <!-- Heading -->
-          <h2>Conclusiones</h2>
-        </div>
-      </div>
-      <div class="row mrgn30">
-        <div class="col-sm-12">
-          <div class="b1" style="background: rgba(255,255,255,0.9); padding: 30px; border-radius: 10px;">
-            <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8;">
-              <li>El <strong>preprocesamiento es esencial</strong> para la homogeneidad y calidad de caracteristicas.</li>
-              <li>Los <strong>descriptores tradicionales</strong> funcionan, pero con limitaciones frente a variabilidad anatomica y contraste.</li>
-              <li><strong>ResNet Transfer Learning</strong> supera las metricas clasicas; es robusto y eficiente.</li>
-              <li>KDE/CDF y extraccion de caracteristicas confirman diferencias de contraste y textura entre clases.</li>
-              <li><strong>Aplicaciones clinicas:</strong> soporte a radiologos, estandarizacion de diagnosticos y reduccion de tiempo de analisis.</li>
-            </ul>
-
-            <h4 style="margin-top: 30px;"><b>Mejoras Sugeridas</b></h4>
-            <ul style="margin-left: 20px; font-size: 16px; line-height: 1.8;">
-              <li>Fine-tuning completo de ResNet</li>
-              <li>Aumento del dataset con data augmentation realista</li>
-              <li>Ensemble de modelos DL + tradicionales</li>
-              <li>Validacion cruzada k-fold</li>
-              <li>Validacion externa con datasets de otros hospitales</li>
-            </ul>
-
-            <h4 style="margin-top: 30px;"><b>Referencias</b></h4>
-            <ul style="margin-left: 20px; font-size: 14px; line-height: 1.6;">
-              <li>Dalal, N., & Triggs, B. (2005). <em>Histograms of oriented gradients for human detection</em>. CVPR.</li>
-              <li>Ojala, T., Pietikainen, M., & Maenpaa, T. (2002). <em>Multiresolution gray-scale and rotation invariant texture classification with LBP</em>. IEEE TPAMI.</li>
-              <li>Haralick, R. M. (1973). <em>Textural features for image classification</em>. IEEE TSMC.</li>
-              <li>He, K., Zhang, X., Ren, S., & Sun, J. (2016). <em>Deep residual learning for image recognition</em>. CVPR.</li>
-              <li>Pizer, S. et al. (1987). <em>Adaptive histogram equalization and its variations</em>. CVGIP.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/.container--> 
   </div>
 </section>
 <footer>
@@ -573,12 +569,12 @@
         <div class="row">
             <div class="col-md-4">
             	<div class="col">
-                   <h4>Informacion del Proyecto</h4>
+                   <h4>Información del proyecto</h4>
                    <ul>
-                        <li>Universidad Nacional de Colombia - Sede Medellin</li>
+                        <li>Universidad Nacional de Colombia - Sede Medellín</li>
                         <li>Facultad de Minas</li>
-                        <li>Maestria en Ingenieria - Analitica</li>
-                        <li>Vision por Computador (3009228)</li>
+                        <li>Maestría en Ingeniería - Analítica</li>
+                        <li>Visión por Computador (3009228)</li>
                         <li>Semestre 2025-01</li>
                     </ul>
                  </div>
@@ -589,14 +585,14 @@
                     <h4>Dataset</h4>
                     <p>Chest X-Ray Images (Pneumonia)</p>
                     <p>Fuente: Kaggle</p>
-                    <p>5,856 imagenes totales</p>
+                    <p>5,856 imágenes totales</p>
                     <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia" target="_blank" class="btn">Ver Dataset</a>
                 </div>
             </div>
             
             <div class="col-md-4">
             	<div class="col">
-                    <h4>Tecnologias Utilizadas</h4>
+                    <h4>Tecnologías utilizadas</h4>
                     <p>Python, OpenCV, scikit-learn</p>
                     <p>PyTorch, ResNet</p>
                     <p>NumPy, Pandas, Matplotlib</p>
@@ -611,7 +607,7 @@
 <section class="copyright">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center"> Universidad Nacional de Colombia - 2025 | Vision por Computador </div>
+      <div class="col-sm-12 text-center"> Universidad Nacional de Colombia - 2025 | Visión por Computador </div>
     </div>
     <!-- / .row --> 
   </div>
